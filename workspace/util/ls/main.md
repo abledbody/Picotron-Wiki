@@ -1,8 +1,8 @@
-# dir [path]
+# ls [path]
 
 ## Overview
 
-Identical to `ls`
+Identical to `dir`
 List all files in the directory
 
 Defaults to your current working path
