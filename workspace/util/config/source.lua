@@ -1,5 +1,3 @@
---[[pod_format="raw",created="2025-06-19 10:38:05",modified="2025-06-20 06:09:44",revision=86]]
-
 argv = env().argv
 
 -- default settings

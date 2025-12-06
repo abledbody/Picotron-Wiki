@@ -1,5 +1,3 @@
---[[pod_format="raw",created="2025-07-15 02:15:51",modified="2025-07-15 02:15:51",prog="bbs://strawberry_src.p64",revision=0,xstickers={}]]
-
 local dat = fetch("/appdata/system/default_apps.pod")
 if (type(dat) != "table") dat = {}
 
