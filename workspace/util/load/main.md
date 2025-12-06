@@ -12,7 +12,7 @@ Source: [source.lua](source.lua)
 
 #### `-b`
 
-Open files from the workspace in the background
+Open files from the workspace in the background, rather than stealing the focus of the current window
 
 ### path
 
