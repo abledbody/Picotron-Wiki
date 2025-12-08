@@ -1107,6 +1107,74 @@
   },
   {
     "name": "main.md",
+    "path": "/system/util/default_app/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "default_app",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Setting extensions `default_app ext [path_to_program]`",
+            "content": [
+              "",
+              "Sets the default programs for extensions, edits `\"/appdata/system/default_apps.pod\"`",
+              "",
+              "Source: [source.lua](source.lua)",
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "Arguments",
+                "content": [
+                  ""
+                ],
+                "children": [
+                  {
+                    "level": 4,
+                    "text": "ext",
+                    "content": [
+                      "",
+                      "The extension you would like to set the default app for, e.g: `lua`",
+                      ""
+                    ],
+                    "children": []
+                  },
+                  {
+                    "level": 4,
+                    "text": "[path_to_program]",
+                    "content": [
+                      "",
+                      "The path to the program that should handle your file.",
+                      "",
+                      "Leave blank to remove the default app for the extension",
+                      ""
+                    ],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "List current extensions `default_app -l`",
+            "content": [
+              "",
+              "Lists all current default extensions you have set"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main.md",
     "path": "/system/util/export/main.md",
     "data": [
       {
@@ -1283,74 +1351,6 @@
                 "children": []
               }
             ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "main.md",
-    "path": "/system/util/default_app/main.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "default_app",
-        "content": [
-          ""
-        ],
-        "children": [
-          {
-            "level": 2,
-            "text": "Setting extensions `default_app ext [path_to_program]`",
-            "content": [
-              "",
-              "Sets the default programs for extensions, edits `\"/appdata/system/default_apps.pod\"`",
-              "",
-              "Source: [source.lua](source.lua)",
-              ""
-            ],
-            "children": [
-              {
-                "level": 3,
-                "text": "Arguments",
-                "content": [
-                  ""
-                ],
-                "children": [
-                  {
-                    "level": 4,
-                    "text": "ext",
-                    "content": [
-                      "",
-                      "The extension you would like to set the default app for, e.g: `lua`",
-                      ""
-                    ],
-                    "children": []
-                  },
-                  {
-                    "level": 4,
-                    "text": "[path_to_program]",
-                    "content": [
-                      "",
-                      "The path to the program that should handle your file.",
-                      "",
-                      "Leave blank to remove the default app for the extension",
-                      ""
-                    ],
-                    "children": []
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "level": 2,
-            "text": "List current extensions `default_app -l`",
-            "content": [
-              "",
-              "Lists all current default extensions you have set"
-            ],
-            "children": []
           }
         ]
       }
@@ -1884,6 +1884,107 @@
     ]
   },
   {
+    "name": "main.md",
+    "path": "/functions/store_metadata/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "store_metadata(filename,meta)",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "`store_metadata` stores metadata, `meta`, at a file or directory, `filename`, merging with the original metadata.",
+              "",
+              "Source: [source.lua](source.lua)",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Arguments",
+            "content": [
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "filename",
+                "content": [
+                  "",
+                  "The path to the file or directory to store metadata in",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "meta",
+                "content": [
+                  "",
+                  "The metadata to store in the file or directory",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "Returns",
+            "content": [
+              "",
+              "This function does not return anything",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Possible Future",
+            "content": [
+              "",
+              "Ability to remove metadata items from the pre-existing metadata"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "readme.md",
+    "path": "/functions/readme.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "functions",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "Documentation on all of functions in the Picotron API",
+              "",
+              "[`set_spr`](/functions/set_spr)"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "whatis.md",
     "path": "/information/whatis.md",
     "data": [
@@ -2036,12 +2137,12 @@
     ]
   },
   {
-    "name": "readme.md",
-    "path": "/functions/readme.md",
+    "name": "main.md",
+    "path": "/functions/sspr/main.md",
     "data": [
       {
         "level": 1,
-        "text": "functions",
+        "text": "sspr(sprite,x,y,sw,sh,dx,dy,[dw],[dh],[flip_x])",
         "content": [
           ""
         ],
@@ -2051,9 +2152,105 @@
             "text": "Overview",
             "content": [
               "",
-              "Documentation on all of functions in the Picotron API",
+              "`sspr` draws a sprite, similar to `spr()`, but allows you to also resize the sprite.",
               "",
-              "[`set_spr`](/functions/set_spr)"
+              "This is scaling sprites, e.g: zoom",
+              "",
+              "Source: [source.lua](source.lua)",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Arguments",
+            "content": [
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "sprite",
+                "content": [
+                  "",
+                  "Sprite index from the spritesheet, or a `userdata u8` piece of data - this is what is drawn.",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "x,y",
+                "content": [
+                  "",
+                  "The coordinates of what is treated as the top left of `sprite`, allowing you to add offsets",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "sw,sh",
+                "content": [
+                  "",
+                  "The width & height of `sprite` - allows you to crop the sprite.",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "dx,dy",
+                "content": [
+                  "",
+                  "Where you want the sprite to be drawn on the screen",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "[dw],[dh]",
+                "content": [
+                  "",
+                  "Optional, defaults to the proportions of the sprite",
+                  "",
+                  "The new width & height of `sprite`.",
+                  "",
+                  "`sprite` will be drawn rescaled to match the proportions of `[dx],[dy]`.",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "Examples",
+            "content": [
+              "",
+              "```lua",
+              "local mapUD=userdata(\"u8\",480,270)",
+              "",
+              "set_draw_target(mapUD) --all graphical operations now go to the map userdata",
+              "map() --draw map",
+              "set_draw_target() --return graphical operations to the window/screen",
+              "",
+              "--mapwidth,mapheight is the proportions of the map",
+              "--x,y is where to draw the map",
+              "",
+              "sspr(mapUD,0,0,mapwidth,mapheight,x,y,mapwidth*2,mapheight*2)",
+              "```",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Returns",
+            "content": [
+              "",
+              "Unknown"
             ],
             "children": []
           }
@@ -2119,6 +2316,81 @@
                 "content": [
                   "",
                   "Length of the userdata to unmap, defaults to the full userdata length",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "Returns",
+            "content": [
+              "",
+              "This function does not return anything"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main.md",
+    "path": "/functions/store/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "store(location, obj, [metadata])",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "`store` allows you to store files, typically used for save files by storing tables in the `pod` file format.",
+              "",
+              "Source: [source.lua](source.lua)",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Arguments",
+            "content": [
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "location",
+                "content": [
+                  "",
+                  "The location you want to store a file at, e.g: `/appdata/mypod.pod`",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "obj",
+                "content": [
+                  "",
+                  "The file data, e.g: a table for a `.pod` file.",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "[metadata]",
+                "content": [
+                  "",
+                  "Optional metadata of the file, e.g: `{mymetadatavalue=\"grapes\"}`",
                   ""
                 ],
                 "children": []
@@ -2357,156 +2629,6 @@
   },
   {
     "name": "main.md",
-    "path": "/functions/store_metadata/main.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "store_metadata(filename,meta)",
-        "content": [
-          ""
-        ],
-        "children": [
-          {
-            "level": 2,
-            "text": "Overview",
-            "content": [
-              "",
-              "`store_metadata` stores metadata, `meta`, at a file or directory, `filename`, merging with the original metadata.",
-              "",
-              "Source: [source.lua](source.lua)",
-              ""
-            ],
-            "children": []
-          },
-          {
-            "level": 2,
-            "text": "Arguments",
-            "content": [
-              ""
-            ],
-            "children": [
-              {
-                "level": 3,
-                "text": "filename",
-                "content": [
-                  "",
-                  "The path to the file or directory to store metadata in",
-                  ""
-                ],
-                "children": []
-              },
-              {
-                "level": 3,
-                "text": "meta",
-                "content": [
-                  "",
-                  "The metadata to store in the file or directory",
-                  ""
-                ],
-                "children": []
-              }
-            ]
-          },
-          {
-            "level": 2,
-            "text": "Returns",
-            "content": [
-              "",
-              "This function does not return anything",
-              ""
-            ],
-            "children": []
-          },
-          {
-            "level": 2,
-            "text": "Possible Future",
-            "content": [
-              "",
-              "Ability to remove metadata items from the pre-existing metadata"
-            ],
-            "children": []
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "main.md",
-    "path": "/functions/store/main.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "store(location, obj, [metadata])",
-        "content": [
-          ""
-        ],
-        "children": [
-          {
-            "level": 2,
-            "text": "Overview",
-            "content": [
-              "",
-              "`store` allows you to store files, typically used for save files by storing tables in the `pod` file format.",
-              "",
-              "Source: [source.lua](source.lua)",
-              ""
-            ],
-            "children": []
-          },
-          {
-            "level": 2,
-            "text": "Arguments",
-            "content": [
-              ""
-            ],
-            "children": [
-              {
-                "level": 3,
-                "text": "location",
-                "content": [
-                  "",
-                  "The location you want to store a file at, e.g: `/appdata/mypod.pod`",
-                  ""
-                ],
-                "children": []
-              },
-              {
-                "level": 3,
-                "text": "obj",
-                "content": [
-                  "",
-                  "The file data, e.g: a table for a `.pod` file.",
-                  ""
-                ],
-                "children": []
-              },
-              {
-                "level": 3,
-                "text": "[metadata]",
-                "content": [
-                  "",
-                  "Optional metadata of the file, e.g: `{mymetadatavalue=\"grapes\"}`",
-                  ""
-                ],
-                "children": []
-              }
-            ]
-          },
-          {
-            "level": 2,
-            "text": "Returns",
-            "content": [
-              "",
-              "This function does not return anything"
-            ],
-            "children": []
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "main.md",
     "path": "/functions/rm/main.md",
     "data": [
       {
@@ -2555,67 +2677,6 @@
             "content": [
               "",
               "Returns something, unknown what it returns"
-            ],
-            "children": []
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "main.md",
-    "path": "/functions/pid/main.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "pid()",
-        "content": [
-          ""
-        ],
-        "children": [
-          {
-            "level": 2,
-            "text": "Overview",
-            "content": [
-              "",
-              "`pid` returns the process id of the process calling it.",
-              "",
-              "This is useful for communication between processes",
-              "",
-              "Source: [source.lua](source.lua)",
-              ""
-            ],
-            "children": []
-          },
-          {
-            "level": 2,
-            "text": "Usage Example",
-            "content": [
-              "",
-              "Using the filenav with the intention to save a file.",
-              "",
-              "```lua",
-              "create_process(\"/system/apps/filenav.p64\", {",
-              "    open_with = pid(), --shows the id of the process that opened it",
-              "    intention = \"save_file_as\",",
-              "    path=\"/desktop/\",",
-              "    use_ext=\"spr\",",
-              "    window_attribs = {",
-              "        workspace=\"current\",",
-              "        autoclose=true",
-              "    }",
-              "})",
-              "```",
-              ""
-            ],
-            "children": []
-          },
-          {
-            "level": 2,
-            "text": "Returns",
-            "content": [
-              "",
-              "The process ID"
             ],
             "children": []
           }
@@ -2694,6 +2755,67 @@
             "content": [
               "",
               "Ability to write to protocols"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main.md",
+    "path": "/functions/pid/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "pid()",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "`pid` returns the process id of the process calling it.",
+              "",
+              "This is useful for communication between processes",
+              "",
+              "Source: [source.lua](source.lua)",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Usage Example",
+            "content": [
+              "",
+              "Using the filenav with the intention to save a file.",
+              "",
+              "```lua",
+              "create_process(\"/system/apps/filenav.p64\", {",
+              "    open_with = pid(), --shows the id of the process that opened it",
+              "    intention = \"save_file_as\",",
+              "    path=\"/desktop/\",",
+              "    use_ext=\"spr\",",
+              "    window_attribs = {",
+              "        workspace=\"current\",",
+              "        autoclose=true",
+              "    }",
+              "})",
+              "```",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Returns",
+            "content": [
+              "",
+              "The process ID"
             ],
             "children": []
           }
@@ -2858,6 +2980,122 @@
               "```",
               "pfxdat = fetch(\"tune.sfx\"):memmap(0x30000)",
               "```"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main.md",
+    "path": "/functions/create_process/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "create_process(prog_name_p, [env_patch])",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "`create_process` runs a process, `prog_name_p`, with optional env data patched in through `[env_patch]`;",
+              "",
+              "This can be done to package multiple pieces of software into one, alongside allowing for multi-process software.",
+              "",
+              "Source: [source.lua](source.lua)",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Arguments",
+            "content": [
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "prog_name_p",
+                "content": [
+                  "",
+                  "The filepath to the file of which to create a process from.",
+                  "",
+                  "This is typically a picotron cartridge or a `.lua` file.",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "[env_path]",
+                "content": [
+                  "",
+                  "Optional argument",
+                  "",
+                  "This allows you to patch environmental information to the process in the form of a table.",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "Examples",
+            "content": [
+              "",
+              "This creates a process, running `app.p64` where `app.p64` prints the text that was fed into it.",
+              "",
+              "When this process runs `env()`, it contains the argument `text`.",
+              "",
+              "```lua",
+              "create_process(\"app.p64\",{text=\"Hi!\"})",
+              "```",
+              "",
+              "Within `app.p64`:",
+              "",
+              "```lua",
+              "print(env().text);",
+              "```",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Sandboxed Nature",
+            "content": [
+              "",
+              "Sandboxed apps can only create processes of:",
+              "",
+              "* /system/apps/filenav.p64",
+              "* /system/apps/notebook.p64",
+              "* /system/util/open.lua",
+              "* /system/util/ls.lua",
+              "* files stored within the sandboxed app",
+              "* apps from `bbs://`",
+              "",
+              "All apps run through this are also sandboxed",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Returns",
+            "content": [
+              "",
+              "This function returns the process id of the created process & an error string.",
+              "",
+              "If the process created is a process that they cannot create > nil, \"sandboxed process can not create_process()\"",
+              "",
+              "If the process creates more than 20 processes in a single minute > return nil, \"sandboxed process can not create_process() more than 20 / minute\""
             ],
             "children": []
           }
@@ -3095,122 +3333,6 @@
   },
   {
     "name": "main.md",
-    "path": "/functions/create_process/main.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "create_process(prog_name_p, [env_patch])",
-        "content": [
-          ""
-        ],
-        "children": [
-          {
-            "level": 2,
-            "text": "Overview",
-            "content": [
-              "",
-              "`create_process` runs a process, `prog_name_p`, with optional env data patched in through `[env_patch]`;",
-              "",
-              "This can be done to package multiple pieces of software into one, alongside allowing for multi-process software.",
-              "",
-              "Source: [source.lua](source.lua)",
-              ""
-            ],
-            "children": []
-          },
-          {
-            "level": 2,
-            "text": "Arguments",
-            "content": [
-              ""
-            ],
-            "children": [
-              {
-                "level": 3,
-                "text": "prog_name_p",
-                "content": [
-                  "",
-                  "The filepath to the file of which to create a process from.",
-                  "",
-                  "This is typically a picotron cartridge or a `.lua` file.",
-                  ""
-                ],
-                "children": []
-              },
-              {
-                "level": 3,
-                "text": "[env_path]",
-                "content": [
-                  "",
-                  "Optional argument",
-                  "",
-                  "This allows you to patch environmental information to the process in the form of a table.",
-                  ""
-                ],
-                "children": []
-              }
-            ]
-          },
-          {
-            "level": 2,
-            "text": "Examples",
-            "content": [
-              "",
-              "This creates a process, running `app.p64` where `app.p64` prints the text that was fed into it.",
-              "",
-              "When this process runs `env()`, it contains the argument `text`.",
-              "",
-              "```lua",
-              "create_process(\"app.p64\",{text=\"Hi!\"})",
-              "```",
-              "",
-              "Within `app.p64`:",
-              "",
-              "```lua",
-              "print(env().text);",
-              "```",
-              ""
-            ],
-            "children": []
-          },
-          {
-            "level": 2,
-            "text": "Sandboxed Nature",
-            "content": [
-              "",
-              "Sandboxed apps can only create processes of:",
-              "",
-              "* /system/apps/filenav.p64",
-              "* /system/apps/notebook.p64",
-              "* /system/util/open.lua",
-              "* /system/util/ls.lua",
-              "* files stored within the sandboxed app",
-              "* apps from `bbs://`",
-              "",
-              "All apps run through this are also sandboxed",
-              ""
-            ],
-            "children": []
-          },
-          {
-            "level": 2,
-            "text": "Returns",
-            "content": [
-              "",
-              "This function returns the process id of the created process & an error string.",
-              "",
-              "If the process created is a process that they cannot create > nil, \"sandboxed process can not create_process()\"",
-              "",
-              "If the process creates more than 20 processes in a single minute > return nil, \"sandboxed process can not create_process() more than 20 / minute\""
-            ],
-            "children": []
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "main.md",
     "path": "/functions/cp/main.md",
     "data": [
       {
@@ -3385,7 +3507,7 @@
             "text": "Returns",
             "content": [
               "",
-              "Unknown"
+              "Returns the previous camera's x,y positions."
             ],
             "children": []
           }

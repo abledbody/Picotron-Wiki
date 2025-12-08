@@ -48,4 +48,4 @@ This can be paired with `mid()` to clamp it to the viewable area, e.g: the map.
 
 ## Returns
 
-Unknown
+Returns the previous camera's x,y positions.
