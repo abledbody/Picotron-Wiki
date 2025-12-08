@@ -173,6 +173,19 @@ fetch('db.json')
             search(q);
             document.getElementById('query').value=q;
             document.getElementById('footer').classList="footer smaller";
+        }else{
+            document.getElementById('md').textContent=db.length;
+            // calculate amount of non readme.md
+            let mainentrycount=0;
+            for (let i=0; i<db.length; i++){
+                let path=db[i].path.toLowerCase();
+                let parts=path.split("/");
+                path=`${parts[parts.length-1]}`;
+                if (path!="readme.md"){
+                    mainentrycount++;
+                }
+            }
+            document.getElementById('mainmd').textContent=mainentrycount;
         }
     })
     .catch(error => {

@@ -919,49 +919,6 @@
   },
   {
     "name": "main.md",
-    "path": "/system/util/info/main.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "info",
-        "content": [
-          ""
-        ],
-        "children": [
-          {
-            "level": 2,
-            "text": "Overview",
-            "content": [
-              "",
-              "Displays information about the current loaded cartridge",
-              "",
-              "Source: [source.lua](source.lua)",
-              ""
-            ],
-            "children": [
-              {
-                "level": 3,
-                "text": "Information displayed",
-                "content": [
-                  "",
-                  "Path to the cartridge on disk",
-                  "",
-                  "Compressed ROM size & compression percentage",
-                  "",
-                  "Whether there are unsaved changes",
-                  "",
-                  "Shows if there are external changes"
-                ],
-                "children": []
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "main.md",
     "path": "/system/util/kill/main.md",
     "data": [
       {
@@ -1007,11 +964,11 @@
   },
   {
     "name": "main.md",
-    "path": "/system/util/folder/main.md",
+    "path": "/system/util/info/main.md",
     "data": [
       {
         "level": 1,
-        "text": "folder [path]",
+        "text": "info",
         "content": [
           ""
         ],
@@ -1021,28 +978,24 @@
             "text": "Overview",
             "content": [
               "",
-              "Opens the current working folder or `[path]` in the host OS.",
-              "",
-              "You cannot open the `/ram/` folder or any `/ram/` subfolders.",
+              "Displays information about the current loaded cartridge",
               "",
               "Source: [source.lua](source.lua)",
-              ""
-            ],
-            "children": []
-          },
-          {
-            "level": 2,
-            "text": "Arguments",
-            "content": [
               ""
             ],
             "children": [
               {
                 "level": 3,
-                "text": "[path]",
+                "text": "Information displayed",
                 "content": [
                   "",
-                  "Lets you define the folder to open"
+                  "Path to the cartridge on disk",
+                  "",
+                  "Compressed ROM size & compression percentage",
+                  "",
+                  "Whether there are unsaved changes",
+                  "",
+                  "Shows if there are external changes"
                 ],
                 "children": []
               }
@@ -1100,6 +1053,53 @@
               "        .. and then CTRL-R to run it\\"
             ],
             "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main.md",
+    "path": "/system/util/folder/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "folder [path]",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "Opens the current working folder or `[path]` in the host OS.",
+              "",
+              "You cannot open the `/ram/` folder or any `/ram/` subfolders.",
+              "",
+              "Source: [source.lua](source.lua)",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Arguments",
+            "content": [
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "[path]",
+                "content": [
+                  "",
+                  "Lets you define the folder to open"
+                ],
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -1669,107 +1669,6 @@
     ]
   },
   {
-    "name": "main.md",
-    "path": "/functions/store_metadata/main.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "store_metadata(filename,meta)",
-        "content": [
-          ""
-        ],
-        "children": [
-          {
-            "level": 2,
-            "text": "Overview",
-            "content": [
-              "",
-              "`store_metadata` stores metadata, `meta`, at a file or directory, `filename`, merging with the original metadata.",
-              "",
-              "Source: [source.lua](source.lua)",
-              ""
-            ],
-            "children": []
-          },
-          {
-            "level": 2,
-            "text": "Arguments",
-            "content": [
-              ""
-            ],
-            "children": [
-              {
-                "level": 3,
-                "text": "filename",
-                "content": [
-                  "",
-                  "The path to the file or directory to store metadata in",
-                  ""
-                ],
-                "children": []
-              },
-              {
-                "level": 3,
-                "text": "meta",
-                "content": [
-                  "",
-                  "The metadata to store in the file or directory",
-                  ""
-                ],
-                "children": []
-              }
-            ]
-          },
-          {
-            "level": 2,
-            "text": "Returns",
-            "content": [
-              "",
-              "This function does not return anything",
-              ""
-            ],
-            "children": []
-          },
-          {
-            "level": 2,
-            "text": "Possible Future",
-            "content": [
-              "",
-              "Ability to remove metadata items from the pre-existing metadata"
-            ],
-            "children": []
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "readme.md",
-    "path": "/functions/readme.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "functions",
-        "content": [
-          ""
-        ],
-        "children": [
-          {
-            "level": 2,
-            "text": "Overview",
-            "content": [
-              "",
-              "Documentation on all of functions in the Picotron API",
-              "",
-              "[`set_spr`](/functions/set_spr)"
-            ],
-            "children": []
-          }
-        ]
-      }
-    ]
-  },
-  {
     "name": "roadmap.md",
     "path": "/information/roadmap.md",
     "data": [
@@ -2137,6 +2036,32 @@
     ]
   },
   {
+    "name": "readme.md",
+    "path": "/functions/readme.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "functions",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "Documentation on all of functions in the Picotron API",
+              "",
+              "[`set_spr`](/functions/set_spr)"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "main.md",
     "path": "/functions/unmap/main.md",
     "data": [
@@ -2206,6 +2131,298 @@
             "content": [
               "",
               "This function does not return anything"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main.md",
+    "path": "/functions/set_spr/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "set_spr(index, s, [flags_val])",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "`set_spr` adds or removes a sprite at a set index.",
+              "",
+              "Sprite flags are stored at 0xc000 (16k)",
+              "",
+              "Source: [source.lua](source.lua)",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Arguments",
+            "content": [
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "index",
+                "content": [
+                  "",
+                  "The index of the sprite you're modifying in the spritesheet.",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "s",
+                "content": [
+                  "",
+                  "The sprite data to set in sprite `index`, form of a `userdata u8`.",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "[flags_val]",
+                "content": [
+                  "",
+                  "The flag information to be set for sprite `index`, defaults to 0",
+                  "",
+                  "Poked into `0xc000`, offset by `index &= 0x3fff`",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "Returns",
+            "content": [
+              "",
+              "This function does not return anything"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main.md",
+    "path": "/functions/send_message/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "send_message(proc_id, msg, [response])",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "`send_message` allows you to communicate with other processes.",
+              "",
+              "This is useful for communication between processes",
+              "",
+              "Source: [source.lua](source.lua)",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Arguments",
+            "content": [
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "proc_id",
+                "content": [
+                  "",
+                  "The process ID of which to send the message to",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "msg",
+                "content": [
+                  "",
+                  "The message, a table, to send to the process `proc_id`.",
+                  "",
+                  "A message must have the key `event`, being a string that is sent to the process as its event.",
+                  "",
+                  "This can be any arbritrary string - handled by the process that receives it.",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "[response]",
+                "content": [
+                  "",
+                  "Optional argument",
+                  "",
+                  "By setting `[response]` to `true`, it causes the function to stall the entire program until it receives a response from the other process.",
+                  "",
+                  "Note that blocking in this way can be quite slow - it is intended to be used in situations where it is acceptable to skip a frame or two while waiting for a reply.",
+                  "",
+                  "When `[response]` is a function, the event handler of the receiving process can reply with another message that is handled by that function.",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "Examples",
+            "content": [
+              "",
+              "> From the Picotron Manual",
+              "",
+              "When reply is true, send_message blocks until the process responds with a reply. For example, paste the following in to terminal to set up a headless process that responds to \"get_id\" messages:",
+              "",
+              "```lua",
+              "store(\"/ram/get_id.lua\", [[",
+              "    id = 1",
+              "    function _update() end",
+              "    on_event(\"get_id\", function() ",
+              "        id += 1",
+              "        return {id = id} ",
+              "    end)",
+              "]])",
+              "pid2 = create_process(\"/ram/get_id.lua\")",
+              "```",
+              "",
+              "A unique id can be fetched from this process with:",
+              "",
+              "```lua",
+              "?send_message(pid2, {event = \"get_id\"}, true).id",
+              "```",
+              "",
+              "The true argument for `[response]` causes the message to be blocking - waiting for the response from `pid2`, being the data including the `id` it requests.",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Sandboxed Nature",
+            "content": [
+              "",
+              "Sandboxed processes can send messages to:",
+              "",
+              "* itself",
+              "* /system/",
+              "* wm",
+              "",
+              "alongside sending certain events:",
+              "",
+              "* \"set_palette\"",
+              "* \"broadcast\" *if* it has a contained event of `set_palette`",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Returns",
+            "content": [
+              "",
+              "This function returns nothing, unless you have a response, where it instead returns the response of the event."
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main.md",
+    "path": "/functions/store_metadata/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "store_metadata(filename,meta)",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "`store_metadata` stores metadata, `meta`, at a file or directory, `filename`, merging with the original metadata.",
+              "",
+              "Source: [source.lua](source.lua)",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Arguments",
+            "content": [
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "filename",
+                "content": [
+                  "",
+                  "The path to the file or directory to store metadata in",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "meta",
+                "content": [
+                  "",
+                  "The metadata to store in the file or directory",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "Returns",
+            "content": [
+              "",
+              "This function does not return anything",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Possible Future",
+            "content": [
+              "",
+              "Ability to remove metadata items from the pre-existing metadata"
             ],
             "children": []
           }
@@ -2347,11 +2564,11 @@
   },
   {
     "name": "main.md",
-    "path": "/functions/set_spr/main.md",
+    "path": "/functions/pid/main.md",
     "data": [
       {
         "level": 1,
-        "text": "set_spr(index, s, [flags_val])",
+        "text": "pid()",
         "content": [
           ""
         ],
@@ -2361,9 +2578,9 @@
             "text": "Overview",
             "content": [
               "",
-              "`set_spr` adds or removes a sprite at a set index.",
+              "`pid` returns the process id of the process calling it.",
               "",
-              "Sprite flags are stored at 0xc000 (16k)",
+              "This is useful for communication between processes",
               "",
               "Source: [source.lua](source.lua)",
               ""
@@ -2372,51 +2589,33 @@
           },
           {
             "level": 2,
-            "text": "Arguments",
+            "text": "Usage Example",
             "content": [
+              "",
+              "Using the filenav with the intention to save a file.",
+              "",
+              "```lua",
+              "create_process(\"/system/apps/filenav.p64\", {",
+              "    open_with = pid(), --shows the id of the process that opened it",
+              "    intention = \"save_file_as\",",
+              "    path=\"/desktop/\",",
+              "    use_ext=\"spr\",",
+              "    window_attribs = {",
+              "        workspace=\"current\",",
+              "        autoclose=true",
+              "    }",
+              "})",
+              "```",
               ""
             ],
-            "children": [
-              {
-                "level": 3,
-                "text": "index",
-                "content": [
-                  "",
-                  "The index of the sprite you're modifying in the spritesheet.",
-                  ""
-                ],
-                "children": []
-              },
-              {
-                "level": 3,
-                "text": "s",
-                "content": [
-                  "",
-                  "The sprite data to set in sprite `index`, form of a `userdata u8`.",
-                  ""
-                ],
-                "children": []
-              },
-              {
-                "level": 3,
-                "text": "[flags_val]",
-                "content": [
-                  "",
-                  "The flag information to be set for sprite `index`, defaults to 0",
-                  "",
-                  "Poked into `0xc000`, offset by `index &= 0x3fff`",
-                  ""
-                ],
-                "children": []
-              }
-            ]
+            "children": []
           },
           {
             "level": 2,
             "text": "Returns",
             "content": [
               "",
-              "This function does not return anything"
+              "The process ID"
             ],
             "children": []
           }
@@ -2495,6 +2694,170 @@
             "content": [
               "",
               "Ability to write to protocols"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main.md",
+    "path": "/functions/mkdir/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "mkdir(p)",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "`mkdir` creates a new directory (empty folder) at the path `p`",
+              "",
+              "This does not support protocols (e.g: bbs://)",
+              "",
+              "Source: [source.lua](source.lua)",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Arguments",
+            "content": [
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "p",
+                "content": [
+                  "",
+                  "The path for the new directory",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "Returns",
+            "content": [
+              "",
+              "This function returns an error in the form of a string if the function fails.",
+              "Otherwise, returns nil",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Future",
+            "content": [
+              "",
+              "Ability to write to protocols"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main.md",
+    "path": "/functions/memmap/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "memmap(ud,addr,[offset],[len])",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "`memmap` allows you to write a 4k (`0x1000`) userdata, `ud` to an address, `addr` in memory",
+              "",
+              "Source: [source.lua](source.lua)",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Arguments",
+            "content": [
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "ud",
+                "content": [
+                  "",
+                  "The userdata that is mapped into memory",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "addr",
+                "content": [
+                  "",
+                  "The address to map the userdata into",
+                  "",
+                  "Mapping to address `0x100000` automatically unmaps the loaded map data & replacing the loaded map in memory with `ud`.",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "[offset]",
+                "content": [
+                  "",
+                  "Unknown",
+                  "",
+                  "> Presuming that it's the offset in either memory in the userdata",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "[len]",
+                "content": [
+                  "",
+                  "Unknown",
+                  "",
+                  "> Presuming that it's the length of the userdata"
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "Returns",
+            "content": [
+              "",
+              "Returns the inputted `ud`",
+              "",
+              "Allows things such as:",
+              "",
+              "```",
+              "pfxdat = fetch(\"tune.sfx\"):memmap(0x30000)",
+              "```"
             ],
             "children": []
           }
@@ -2677,74 +3040,6 @@
   },
   {
     "name": "main.md",
-    "path": "/functions/mkdir/main.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "mkdir(p)",
-        "content": [
-          ""
-        ],
-        "children": [
-          {
-            "level": 2,
-            "text": "Overview",
-            "content": [
-              "",
-              "`mkdir` creates a new directory (empty folder) at the path `p`",
-              "",
-              "This does not support protocols (e.g: bbs://)",
-              "",
-              "Source: [source.lua](source.lua)",
-              ""
-            ],
-            "children": []
-          },
-          {
-            "level": 2,
-            "text": "Arguments",
-            "content": [
-              ""
-            ],
-            "children": [
-              {
-                "level": 3,
-                "text": "p",
-                "content": [
-                  "",
-                  "The path for the new directory",
-                  ""
-                ],
-                "children": []
-              }
-            ]
-          },
-          {
-            "level": 2,
-            "text": "Returns",
-            "content": [
-              "",
-              "This function returns an error in the form of a string if the function fails.",
-              "Otherwise, returns nil",
-              ""
-            ],
-            "children": []
-          },
-          {
-            "level": 2,
-            "text": "Future",
-            "content": [
-              "",
-              "Ability to write to protocols"
-            ],
-            "children": []
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "main.md",
     "path": "/functions/get_spr/main.md",
     "data": [
       {
@@ -2800,11 +3095,11 @@
   },
   {
     "name": "main.md",
-    "path": "/functions/memmap/main.md",
+    "path": "/functions/create_process/main.md",
     "data": [
       {
         "level": 1,
-        "text": "memmap(ud,addr,[offset],[len])",
+        "text": "create_process(prog_name_p, [env_patch])",
         "content": [
           ""
         ],
@@ -2814,7 +3109,9 @@
             "text": "Overview",
             "content": [
               "",
-              "`memmap` allows you to write a 4k (`0x1000`) userdata, `ud` to an address, `addr` in memory",
+              "`create_process` runs a process, `prog_name_p`, with optional env data patched in through `[env_patch]`;",
+              "",
+              "This can be done to package multiple pieces of software into one, alongside allowing for multi-process software.",
               "",
               "Source: [source.lua](source.lua)",
               ""
@@ -2830,46 +3127,25 @@
             "children": [
               {
                 "level": 3,
-                "text": "ud",
+                "text": "prog_name_p",
                 "content": [
                   "",
-                  "The userdata that is mapped into memory",
+                  "The filepath to the file of which to create a process from.",
+                  "",
+                  "This is typically a picotron cartridge or a `.lua` file.",
                   ""
                 ],
                 "children": []
               },
               {
                 "level": 3,
-                "text": "addr",
+                "text": "[env_path]",
                 "content": [
                   "",
-                  "The address to map the userdata into",
+                  "Optional argument",
                   "",
-                  "Mapping to address `0x100000` automatically unmaps the loaded map data & replacing the loaded map in memory with `ud`.",
+                  "This allows you to patch environmental information to the process in the form of a table.",
                   ""
-                ],
-                "children": []
-              },
-              {
-                "level": 3,
-                "text": "[offset]",
-                "content": [
-                  "",
-                  "Unknown",
-                  "",
-                  "> Presuming that it's the offset in either memory in the userdata",
-                  ""
-                ],
-                "children": []
-              },
-              {
-                "level": 3,
-                "text": "[len]",
-                "content": [
-                  "",
-                  "Unknown",
-                  "",
-                  "> Presuming that it's the length of the userdata"
                 ],
                 "children": []
               }
@@ -2877,16 +3153,55 @@
           },
           {
             "level": 2,
+            "text": "Examples",
+            "content": [
+              "",
+              "This creates a process, running `app.p64` where `app.p64` prints the text that was fed into it.",
+              "",
+              "When this process runs `env()`, it contains the argument `text`.",
+              "",
+              "```lua",
+              "create_process(\"app.p64\",{text=\"Hi!\"})",
+              "```",
+              "",
+              "Within `app.p64`:",
+              "",
+              "```lua",
+              "print(env().text);",
+              "```",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Sandboxed Nature",
+            "content": [
+              "",
+              "Sandboxed apps can only create processes of:",
+              "",
+              "* /system/apps/filenav.p64",
+              "* /system/apps/notebook.p64",
+              "* /system/util/open.lua",
+              "* /system/util/ls.lua",
+              "* files stored within the sandboxed app",
+              "* apps from `bbs://`",
+              "",
+              "All apps run through this are also sandboxed",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
             "text": "Returns",
             "content": [
               "",
-              "Returns the inputted `ud`",
+              "This function returns the process id of the created process & an error string.",
               "",
-              "Allows things such as:",
+              "If the process created is a process that they cannot create > nil, \"sandboxed process can not create_process()\"",
               "",
-              "```",
-              "pfxdat = fetch(\"tune.sfx\"):memmap(0x30000)",
-              "```"
+              "If the process creates more than 20 processes in a single minute > return nil, \"sandboxed process can not create_process() more than 20 / minute\""
             ],
             "children": []
           }
@@ -2970,6 +3285,107 @@
             "content": [
               "",
               "Ability to write to protocols"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main.md",
+    "path": "/functions/camera/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "camera(x,y)",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "camera() allows for you to set the relative 0,0 of all graphical operations.",
+              "",
+              "Source: [source.lua](source.lua)",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Arguments",
+            "content": [
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "x",
+                "content": [
+                  "",
+                  "x coordinate to set",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "y",
+                "content": [
+                  "",
+                  "y coordinate to set",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "Examples",
+            "content": [
+              "",
+              "Sets a player object to be in the middle of the screen",
+              "```lua",
+              "",
+              "--player object",
+              "player={",
+              "    x=0,",
+              "    y=0",
+              "}",
+              "",
+              "--set the player to be in the middle of the screen",
+              "",
+              "screen={",
+              "    width=480,",
+              "    height=270",
+              "}",
+              "",
+              "function _update()",
+              "    camera={",
+              "        x=player.x-(screen.width/2),",
+              "        y=player.y-(screen.height/2),",
+              "    }",
+              "",
+              "    camera(x,y)",
+              "end",
+              "```",
+              "",
+              "This can be paired with `mid()` to clamp it to the viewable area, e.g: the map.",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Returns",
+            "content": [
+              "",
+              "Unknown"
             ],
             "children": []
           }
