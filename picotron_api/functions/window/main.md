@@ -86,3 +86,7 @@ allow _update() callbacks when parent window is not visible
 #### background_draws
 
 allow _draw() callbacks when parent window is not visible
+
+### show_context_menu
+
+displays the menu at the player's cursor
