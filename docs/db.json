@@ -126,6 +126,32 @@
   },
   {
     "name": "readme.md",
+    "path": "/system/readme.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "system",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "Documentation on all of `/system/`",
+              "",
+              "[`/system/util`](util/)"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "readme.md",
     "path": "/system/util/readme.md",
     "data": [
       {
@@ -198,32 +224,6 @@
               "[save](save/)",
               "",
               "[shutdown](shutdown/)"
-            ],
-            "children": []
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "readme.md",
-    "path": "/system/readme.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "system",
-        "content": [
-          ""
-        ],
-        "children": [
-          {
-            "level": 2,
-            "text": "Overview",
-            "content": [
-              "",
-              "Documentation on all of `/system/`",
-              "",
-              "[`/system/util`](util/)"
             ],
             "children": []
           }
@@ -891,6 +891,51 @@
   },
   {
     "name": "main.md",
+    "path": "/system/util/kill/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "kill pid",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "Kills (shuts down) the process with the pid `pid`",
+              "",
+              "Source: [source.lua](source.lua)",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Arguments",
+            "content": [
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "pid",
+                "content": [
+                  "",
+                  "The process id of the process you want to kill"
+                ],
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main.md",
     "path": "/system/util/load/main.md",
     "data": [
       {
@@ -946,51 +991,6 @@
                   "The path, folder or file, to a cartridge",
                   "",
                   "Append with `bbs://` protocol or `#` to load a cartridge from the bbs"
-                ],
-                "children": []
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "main.md",
-    "path": "/system/util/kill/main.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "kill pid",
-        "content": [
-          ""
-        ],
-        "children": [
-          {
-            "level": 2,
-            "text": "Overview",
-            "content": [
-              "",
-              "Kills (shuts down) the process with the pid `pid`",
-              "",
-              "Source: [source.lua](source.lua)",
-              ""
-            ],
-            "children": []
-          },
-          {
-            "level": 2,
-            "text": "Arguments",
-            "content": [
-              ""
-            ],
-            "children": [
-              {
-                "level": 3,
-                "text": "pid",
-                "content": [
-                  "",
-                  "The process id of the process you want to kill"
                 ],
                 "children": []
               }
@@ -1145,6 +1145,53 @@
   },
   {
     "name": "main.md",
+    "path": "/system/util/edit/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "edit path",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "Edit the file specified",
+              "",
+              "Fails if there is no default program to edit it",
+              "",
+              "Source: [source.lua](source.lua)",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Arguments",
+            "content": [
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "path",
+                "content": [
+                  "",
+                  "Path to the file you want to edit"
+                ],
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main.md",
     "path": "/system/util/export/main.md",
     "data": [
       {
@@ -1270,53 +1317,6 @@
                 "content": [
                   "",
                   "Optional argument for the path you want to list files of, instead of your current working path"
-                ],
-                "children": []
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "main.md",
-    "path": "/system/util/edit/main.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "edit path",
-        "content": [
-          ""
-        ],
-        "children": [
-          {
-            "level": 2,
-            "text": "Overview",
-            "content": [
-              "",
-              "Edit the file specified",
-              "",
-              "Fails if there is no default program to edit it",
-              "",
-              "Source: [source.lua](source.lua)",
-              ""
-            ],
-            "children": []
-          },
-          {
-            "level": 2,
-            "text": "Arguments",
-            "content": [
-              ""
-            ],
-            "children": [
-              {
-                "level": 3,
-                "text": "path",
-                "content": [
-                  "",
-                  "Path to the file you want to edit"
                 ],
                 "children": []
               }
@@ -1719,30 +1719,6 @@
   },
   {
     "name": "readme.md",
-    "path": "/picotron_api/userdata/readme.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "Picotron API > userdata",
-        "content": [
-          ""
-        ],
-        "children": [
-          {
-            "level": 2,
-            "text": "Overview",
-            "content": [
-              "",
-              "Documentation on userdata for Picotron"
-            ],
-            "children": []
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "readme.md",
     "path": "/picotron_api/gui/readme.md",
     "data": [
       {
@@ -1766,6 +1742,30 @@
               "[Attachments](attachments/readme.md)",
               "",
               "[Attributes](attributes/readme.md)"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "readme.md",
+    "path": "/picotron_api/userdata/readme.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "Picotron API > userdata",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "Documentation on userdata for Picotron"
             ],
             "children": []
           }
@@ -1915,69 +1915,6 @@
   },
   {
     "name": "main.md",
-    "path": "/picotron_api/gui/event_callbacks/release/main.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "release",
-        "content": [
-          ""
-        ],
-        "children": [
-          {
-            "level": 2,
-            "text": "Overview",
-            "content": [
-              "",
-              "Triggered on the first frame that a mouse button is released. Use `msg.last_mb` if you want to check that a specific mouse button was released.",
-              ""
-            ],
-            "children": []
-          },
-          {
-            "level": 2,
-            "text": "msg values",
-            "content": [
-              ""
-            ],
-            "children": [
-              {
-                "level": 3,
-                "text": "last_mb",
-                "content": [
-                  "",
-                  "msg.mb from previous frame",
-                  ""
-                ],
-                "children": []
-              },
-              {
-                "level": 3,
-                "text": "mx0",
-                "content": [
-                  "",
-                  "X position where mouse was first clicked",
-                  ""
-                ],
-                "children": []
-              },
-              {
-                "level": 3,
-                "text": "my0",
-                "content": [
-                  "",
-                  "Y position where mouse was first clicked"
-                ],
-                "children": []
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "main.md",
     "path": "/picotron_api/gui/event_callbacks/tap/main.md",
     "data": [
       {
@@ -2077,6 +2014,69 @@
   },
   {
     "name": "main.md",
+    "path": "/picotron_api/gui/event_callbacks/release/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "release",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "Triggered on the first frame that a mouse button is released. Use `msg.last_mb` if you want to check that a specific mouse button was released.",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "msg values",
+            "content": [
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "last_mb",
+                "content": [
+                  "",
+                  "msg.mb from previous frame",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "mx0",
+                "content": [
+                  "",
+                  "X position where mouse was first clicked",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "my0",
+                "content": [
+                  "",
+                  "Y position where mouse was first clicked"
+                ],
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main.md",
     "path": "/picotron_api/gui/event_callbacks/hover/main.md",
     "data": [
       {
@@ -2092,30 +2092,6 @@
             "content": [
               "",
               "Triggered every frame if the mouse is hovering over this element."
-            ],
-            "children": []
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "main.md",
-    "path": "/picotron_api/gui/event_callbacks/draw/main.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "draw",
-        "content": [
-          ""
-        ],
-        "children": [
-          {
-            "level": 2,
-            "text": "Overview",
-            "content": [
-              "",
-              "Triggered every gui:draw_all()."
             ],
             "children": []
           }
@@ -2183,6 +2159,30 @@
                 "children": []
               }
             ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main.md",
+    "path": "/picotron_api/gui/event_callbacks/draw/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "draw",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "Triggered every gui:draw_all()."
+            ],
+            "children": []
           }
         ]
       }
@@ -2366,42 +2366,6 @@
   },
   {
     "name": "main.md",
-    "path": "/picotron_api/gui/attributes/y/main.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "y",
-        "content": [
-          ""
-        ],
-        "children": [
-          {
-            "level": 2,
-            "text": "Overview",
-            "content": [
-              "",
-              "Element position along the y axis",
-              ""
-            ],
-            "children": []
-          },
-          {
-            "level": 2,
-            "text": "Values",
-            "content": [
-              "",
-              "Default value: 0",
-              "",
-              "Valid values: Any number"
-            ],
-            "children": []
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "main.md",
     "path": "/picotron_api/gui/attributes/x/main.md",
     "data": [
       {
@@ -2471,6 +2435,42 @@
               "e.g:",
               "* 1 = 100% of the parent width",
               "* 0.5 means 50%"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main.md",
+    "path": "/picotron_api/gui/attributes/y/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "y",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "Element position along the y axis",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Values",
+            "content": [
+              "",
+              "Default value: 0",
+              "",
+              "Valid values: Any number"
             ],
             "children": []
           }
@@ -2595,6 +2595,30 @@
   },
   {
     "name": "main.md",
+    "path": "/picotron_api/gui/attributes/squash_to_clip/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "squash_to_clip",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "Unknown"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main.md",
     "path": "/picotron_api/gui/attributes/squash_to_parent/main.md",
     "data": [
       {
@@ -2655,30 +2679,6 @@
   },
   {
     "name": "main.md",
-    "path": "/picotron_api/gui/attributes/squash_to_clip/main.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "squash_to_clip",
-        "content": [
-          ""
-        ],
-        "children": [
-          {
-            "level": 2,
-            "text": "Overview",
-            "content": [
-              "",
-              "Unknown"
-            ],
-            "children": []
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "main.md",
     "path": "/picotron_api/gui/attributes/min_height/main.md",
     "data": [
       {
@@ -2694,44 +2694,6 @@
             "content": [
               "",
               "If calculated height is less than this value, then this value is used as the [height](/picotron_api/gui/attributes/height/main.md) attribute instead.",
-              ""
-            ],
-            "children": []
-          },
-          {
-            "level": 2,
-            "text": "Values",
-            "content": [
-              "",
-              "Default value: nil",
-              "",
-              "Valid values: any number"
-            ],
-            "children": []
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "main.md",
-    "path": "/picotron_api/gui/attributes/height_add/main.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "height_add",
-        "content": [
-          ""
-        ],
-        "children": [
-          {
-            "level": 2,
-            "text": "Overview",
-            "content": [
-              "",
-              "If [`Element.height_rel`](/picotron_api/gui/attributes/height_add/main.md) is not nil, this value is added to the final height. ",
-              "",
-              "Otherwise, does nothing.",
               ""
             ],
             "children": []
@@ -2871,11 +2833,11 @@
   },
   {
     "name": "main.md",
-    "path": "/picotron_api/gui/attributes/confine_to_parent/main.md",
+    "path": "/picotron_api/gui/attributes/height_add/main.md",
     "data": [
       {
         "level": 1,
-        "text": "confine_to_parent",
+        "text": "height_add",
         "content": [
           ""
         ],
@@ -2885,9 +2847,9 @@
             "text": "Overview",
             "content": [
               "",
-              "Reposition so that element remains inside parent -  when oversized, set x / y to 0",
+              "If [`Element.height_rel`](/picotron_api/gui/attributes/height_add/main.md) is not nil, this value is added to the final height. ",
               "",
-              "This can be used with [`squash_to_parent`](/picotron_api/gui/attributes/squash_to__parent/main.md)",
+              "Otherwise, does nothing.",
               ""
             ],
             "children": []
@@ -2897,9 +2859,9 @@
             "text": "Values",
             "content": [
               "",
-              "Default value: false",
+              "Default value: nil",
               "",
-              "Valid values: true, false"
+              "Valid values: any number"
             ],
             "children": []
           }
@@ -2945,6 +2907,68 @@
                 "children": []
               }
             ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main.md",
+    "path": "/picotron_api/gui/attributes/confine_to_parent/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "confine_to_parent",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "Reposition so that element remains inside parent -  when oversized, set x / y to 0",
+              "",
+              "This can be used with [`squash_to_parent`](/picotron_api/gui/attributes/squash_to__parent/main.md)",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Values",
+            "content": [
+              "",
+              "Default value: false",
+              "",
+              "Valid values: true, false"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main.md",
+    "path": "/picotron_api/gui/attributes/confine_to_clip/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "confine_to_clip",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "Unknown"
+            ],
+            "children": []
           }
         ]
       }
@@ -3008,30 +3032,6 @@
                 "children": []
               }
             ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "main.md",
-    "path": "/picotron_api/gui/attributes/confine_to_clip/main.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "confine_to_clip",
-        "content": [
-          ""
-        ],
-        "children": [
-          {
-            "level": 2,
-            "text": "Overview",
-            "content": [
-              "",
-              "Unknown"
-            ],
-            "children": []
           }
         ]
       }
@@ -3150,34 +3150,6 @@
   },
   {
     "name": "main.md",
-    "path": "/picotron_api/gui/attachments/attach_pulldown/main.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "el:attach_pulldown()",
-        "content": [
-          ""
-        ],
-        "children": [
-          {
-            "level": 2,
-            "text": "Overview",
-            "content": [
-              "",
-              "Attaches a pulldown to the element",
-              "",
-              "Source: [source.lua](source.lua)",
-              "",
-              "Details unknown."
-            ],
-            "children": []
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "main.md",
     "path": "/picotron_api/gui/attachments/attach_scrollbars/main.md",
     "data": [
       {
@@ -3243,11 +3215,11 @@
   },
   {
     "name": "main.md",
-    "path": "/picotron_api/gui/attachments/attach_field/main.md",
+    "path": "/picotron_api/gui/attachments/attach_pulldown/main.md",
     "data": [
       {
         "level": 1,
-        "text": "attach_field(el)",
+        "text": "el:attach_pulldown()",
         "content": [
           ""
         ],
@@ -3257,91 +3229,13 @@
             "text": "Overview",
             "content": [
               "",
-              "Attaches a text field to the element.",
-              "",
-              "Used for editing small amounts of text.",
+              "Attaches a pulldown to the element",
               "",
               "Source: [source.lua](source.lua)",
-              ""
+              "",
+              "Details unknown."
             ],
             "children": []
-          },
-          {
-            "level": 2,
-            "text": "Expected attributes",
-            "content": [
-              ""
-            ],
-            "children": [
-              {
-                "level": 3,
-                "text": "x",
-                "content": [
-                  "",
-                  "x-position of the element",
-                  ""
-                ],
-                "children": []
-              },
-              {
-                "level": 3,
-                "text": "y",
-                "content": [
-                  "",
-                  "y-position of the element",
-                  ""
-                ],
-                "children": []
-              },
-              {
-                "level": 3,
-                "text": "width",
-                "content": [
-                  "",
-                  "width of the element",
-                  ""
-                ],
-                "children": []
-              },
-              {
-                "level": 3,
-                "text": "height",
-                "content": [
-                  "",
-                  "height of the element",
-                  ""
-                ],
-                "children": []
-              }
-            ]
-          },
-          {
-            "level": 2,
-            "text": "Expected event callbacks",
-            "content": [
-              ""
-            ],
-            "children": [
-              {
-                "level": 3,
-                "text": "get() event callback",
-                "content": [
-                  "",
-                  "A function to handle getting the field's intial text",
-                  ""
-                ],
-                "children": []
-              },
-              {
-                "level": 3,
-                "text": "set() event callback",
-                "content": [
-                  "",
-                  "A function to handle setting the field's text to the user input"
-                ],
-                "children": []
-              }
-            ]
           }
         ]
       }
@@ -3477,6 +3371,112 @@
   },
   {
     "name": "main.md",
+    "path": "/picotron_api/gui/attachments/attach_field/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "attach_field(el)",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "Attaches a text field to the element.",
+              "",
+              "Used for editing small amounts of text.",
+              "",
+              "Source: [source.lua](source.lua)",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Expected attributes",
+            "content": [
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "x",
+                "content": [
+                  "",
+                  "x-position of the element",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "y",
+                "content": [
+                  "",
+                  "y-position of the element",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "width",
+                "content": [
+                  "",
+                  "width of the element",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "height",
+                "content": [
+                  "",
+                  "height of the element",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "Expected event callbacks",
+            "content": [
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "get() event callback",
+                "content": [
+                  "",
+                  "A function to handle getting the field's intial text",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "set() event callback",
+                "content": [
+                  "",
+                  "A function to handle setting the field's text to the user input"
+                ],
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main.md",
     "path": "/picotron_api/gui/attachments/attach/main.md",
     "data": [
       {
@@ -3603,83 +3603,6 @@
               "[`printh`](printh/main.md)",
               "",
               "[`include`](include/main.md)"
-            ],
-            "children": []
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "main.md",
-    "path": "/picotron_api/functions/unmap/main.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "unmap(ud,addr,[len])",
-        "content": [
-          ""
-        ],
-        "children": [
-          {
-            "level": 2,
-            "text": "Overview",
-            "content": [
-              "",
-              "this is the only way to release mapped userdata for collection",
-              "",
-              "e.g. memmapping a userdata over an old one is not sufficient to free it for collection",
-              "",
-              "Source: [source.lua](source.lua)",
-              ""
-            ],
-            "children": []
-          },
-          {
-            "level": 2,
-            "text": "Arguments",
-            "content": [
-              ""
-            ],
-            "children": [
-              {
-                "level": 3,
-                "text": "ud",
-                "content": [
-                  "",
-                  "The userdata that is unmapped from memory",
-                  ""
-                ],
-                "children": []
-              },
-              {
-                "level": 3,
-                "text": "addr",
-                "content": [
-                  "",
-                  "The address to unmap the userdata from",
-                  ""
-                ],
-                "children": []
-              },
-              {
-                "level": 3,
-                "text": "[len]",
-                "content": [
-                  "",
-                  "Length of the userdata to unmap, defaults to the full userdata length",
-                  ""
-                ],
-                "children": []
-              }
-            ]
-          },
-          {
-            "level": 2,
-            "text": "Returns",
-            "content": [
-              "",
-              "This function does not return anything"
             ],
             "children": []
           }
@@ -3916,11 +3839,113 @@
   },
   {
     "name": "main.md",
-    "path": "/picotron_api/functions/store_metadata/main.md",
+    "path": "/picotron_api/functions/userdata/main.md",
     "data": [
       {
         "level": 1,
-        "text": "store_metadata(filename,meta)",
+        "text": "userdata(type, width, [height], [data]): userdata",
+        "content": [],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "The userdata function is one of two ways to create a new userdata from scratch, with the other being the [vec](picotron_api/functions/vec/main.md) function.",
+              "Produces a new [userdata](/picotron_api/userdata/readme.md) with a specified type and size.",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Arguments",
+            "content": [],
+            "children": [
+              {
+                "level": 3,
+                "text": "`type`: \"u8\"|\"i16\"|\"i32\"|\"i64\"|\"f64\"",
+                "content": [
+                  "",
+                  "The type of number that the userdata will contain.",
+                  "- \"u8\" is an unsigned 8-bit integer",
+                  "- \"i16\" is a signed 16-bit integer",
+                  "- \"i32\" is a signed 32-bit integer",
+                  "- \"i64\" is a signed 64-bit integer",
+                  "- \"f64\" is a 64-bit floating point number",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "`width`: integer",
+                "content": [
+                  "",
+                  "The number of columns in the produced userdata.",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "`[height]`: integer",
+                "content": [
+                  "The number of rows in the produced userdata. Defaults to 1.  ",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "`[data]`: string",
+                "content": [
+                  "The values to initialize the userdata with. Defaults to setting every entry to 0.",
+                  "",
+                  "If the userdata is an integer type, `data` must be formatted as a contiguous 0-padded hexidecimal string. For instance, if `type` is `i16`, the string `\"000F2001\"` would produce the numbers (in decimal) 15 and 8,193 for indices 0 and 1.",
+                  "",
+                  "If the userdata is a floating point type, `data` must be formatted as a comma-separated list of decimal values. For instance, `\"0.1,0.5,12\"`.",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "Returns",
+            "content": [
+              "[userdata](/picotron_api/userdata/readme.md)",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Example",
+            "content": [
+              "```lua",
+              "local ud = userdata(\"u8\", 2, 2, \"080D1522\")",
+              "",
+              "?ud:get(0, 0) -- 8",
+              "?ud:get(1, 0) -- 13",
+              "?ud:get(0, 1) -- 21",
+              "?ud:get(1, 1) -- 34",
+              "```",
+              ""
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main.md",
+    "path": "/picotron_api/functions/unmap/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "unmap(ud,addr,[len])",
         "content": [
           ""
         ],
@@ -3930,7 +3955,9 @@
             "text": "Overview",
             "content": [
               "",
-              "`store_metadata` stores metadata, `meta`, at a file or directory, `filename`, merging with the original metadata.",
+              "this is the only way to release mapped userdata for collection",
+              "",
+              "e.g. memmapping a userdata over an old one is not sufficient to free it for collection",
               "",
               "Source: [source.lua](source.lua)",
               ""
@@ -3946,20 +3973,30 @@
             "children": [
               {
                 "level": 3,
-                "text": "filename",
+                "text": "ud",
                 "content": [
                   "",
-                  "The path to the file or directory to store metadata in",
+                  "The userdata that is unmapped from memory",
                   ""
                 ],
                 "children": []
               },
               {
                 "level": 3,
-                "text": "meta",
+                "text": "addr",
                 "content": [
                   "",
-                  "The metadata to store in the file or directory",
+                  "The address to unmap the userdata from",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "[len]",
+                "content": [
+                  "",
+                  "Length of the userdata to unmap, defaults to the full userdata length",
                   ""
                 ],
                 "children": []
@@ -3971,17 +4008,7 @@
             "text": "Returns",
             "content": [
               "",
-              "This function does not return anything",
-              ""
-            ],
-            "children": []
-          },
-          {
-            "level": 2,
-            "text": "Possible Future",
-            "content": [
-              "",
-              "Ability to remove metadata items from the pre-existing metadata"
+              "This function does not return anything"
             ],
             "children": []
           }
@@ -4066,11 +4093,11 @@
   },
   {
     "name": "main.md",
-    "path": "/picotron_api/functions/spr/main.md",
+    "path": "/picotron_api/functions/store_metadata/main.md",
     "data": [
       {
         "level": 1,
-        "text": "spr(sprite,[x],[y],[flip_x],[flip_y])",
+        "text": "store_metadata(filename,meta)",
         "content": [
           ""
         ],
@@ -4080,9 +4107,7 @@
             "text": "Overview",
             "content": [
               "",
-              "`sspr` draws a sprite, similar to [`spr()`](/functions/spr/main.md), but allows you to also resize the sprite.",
-              "",
-              "This is scaling sprites, e.g: zoom",
+              "`store_metadata` stores metadata, `meta`, at a file or directory, `filename`, merging with the original metadata.",
               "",
               "Source: [source.lua](source.lua)",
               ""
@@ -4098,30 +4123,20 @@
             "children": [
               {
                 "level": 3,
-                "text": "sprite",
+                "text": "filename",
                 "content": [
                   "",
-                  "Sprite index from the spritesheet, or a `userdata u8` piece of data - this is what is drawn.",
+                  "The path to the file or directory to store metadata in",
                   ""
                 ],
                 "children": []
               },
               {
                 "level": 3,
-                "text": "x,y",
+                "text": "meta",
                 "content": [
                   "",
-                  "The coordinates of where to draw the sprite",
-                  ""
-                ],
-                "children": []
-              },
-              {
-                "level": 3,
-                "text": "[flip_x],[flip_y]",
-                "content": [
-                  "",
-                  "Flips the sprite on their respective axis",
+                  "The metadata to store in the file or directory",
                   ""
                 ],
                 "children": []
@@ -4130,30 +4145,20 @@
           },
           {
             "level": 2,
-            "text": "Examples",
+            "text": "Returns",
             "content": [
               "",
-              "Draw a sprite from sprite index 0 to position (0,0)",
-              "```lua",
-              "spr(0,0,0)",
-              "```",
-              "",
-              "Draw a sprite from a `userdata u8` to position (0,0)",
-              "```lua",
-              "sp=--[[pod_type=\"gfx\"]]unpod(\"b64:bHo0ALEAAAC4AQAA_gFweHUAQyBAQATw9jPwHDOwBQCvcDM3M-AUMzEzMAkACEuz8BSzBQCPcDNw8wxwM7AHAAGN8ABz_wxz8AQGADAAM-t3AAkFAO9wMzt-IPsMfjszMDM7fgkABo8_dz77BD53PgsAEz9_u34KABBf-gS7-gQIAAjvPxp_Nz67Pjd_PTMwMz0MAA6fcDN9frt_fTOwCAAEYPAAc7s_uwwBDwcAAFQM8wzwFAQAUPMM8P8D\")",
-              "",
-              "spr(sp,0,0)",
-              "```",
+              "This function does not return anything",
               ""
             ],
             "children": []
           },
           {
             "level": 2,
-            "text": "Returns",
+            "text": "Possible Future",
             "content": [
               "",
-              "Unknown"
+              "Ability to remove metadata items from the pre-existing metadata"
             ],
             "children": []
           }
@@ -4295,11 +4300,11 @@
   },
   {
     "name": "main.md",
-    "path": "/picotron_api/functions/set_spr/main.md",
+    "path": "/picotron_api/functions/spr/main.md",
     "data": [
       {
         "level": 1,
-        "text": "set_spr(index, s, [flags_val])",
+        "text": "spr(sprite,[x],[y],[flip_x],[flip_y])",
         "content": [
           ""
         ],
@@ -4309,9 +4314,9 @@
             "text": "Overview",
             "content": [
               "",
-              "`set_spr` adds or removes a sprite at a set index.",
+              "`sspr` draws a sprite, similar to [`spr()`](/functions/spr/main.md), but allows you to also resize the sprite.",
               "",
-              "Sprite flags are stored at 0xc000 (16k)",
+              "This is scaling sprites, e.g: zoom",
               "",
               "Source: [source.lua](source.lua)",
               ""
@@ -4327,32 +4332,30 @@
             "children": [
               {
                 "level": 3,
-                "text": "index",
+                "text": "sprite",
                 "content": [
                   "",
-                  "The index of the sprite you're modifying in the spritesheet.",
+                  "Sprite index from the spritesheet, or a `userdata u8` piece of data - this is what is drawn.",
                   ""
                 ],
                 "children": []
               },
               {
                 "level": 3,
-                "text": "s",
+                "text": "x,y",
                 "content": [
                   "",
-                  "The sprite data to set in sprite `index`, form of a `userdata u8`.",
+                  "The coordinates of where to draw the sprite",
                   ""
                 ],
                 "children": []
               },
               {
                 "level": 3,
-                "text": "[flags_val]",
+                "text": "[flip_x],[flip_y]",
                 "content": [
                   "",
-                  "The flag information to be set for sprite `index`, defaults to 0",
-                  "",
-                  "Poked into `0xc000`, offset by `index &= 0x3fff`",
+                  "Flips the sprite on their respective axis",
                   ""
                 ],
                 "children": []
@@ -4361,10 +4364,30 @@
           },
           {
             "level": 2,
+            "text": "Examples",
+            "content": [
+              "",
+              "Draw a sprite from sprite index 0 to position (0,0)",
+              "```lua",
+              "spr(0,0,0)",
+              "```",
+              "",
+              "Draw a sprite from a `userdata u8` to position (0,0)",
+              "```lua",
+              "sp=--[[pod_type=\"gfx\"]]unpod(\"b64:bHo0ALEAAAC4AQAA_gFweHUAQyBAQATw9jPwHDOwBQCvcDM3M-AUMzEzMAkACEuz8BSzBQCPcDNw8wxwM7AHAAGN8ABz_wxz8AQGADAAM-t3AAkFAO9wMzt-IPsMfjszMDM7fgkABo8_dz77BD53PgsAEz9_u34KABBf-gS7-gQIAAjvPxp_Nz67Pjd_PTMwMz0MAA6fcDN9frt_fTOwCAAEYPAAc7s_uwwBDwcAAFQM8wzwFAQAUPMM8P8D\")",
+              "",
+              "spr(sp,0,0)",
+              "```",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
             "text": "Returns",
             "content": [
               "",
-              "This function does not return anything"
+              "Unknown"
             ],
             "children": []
           }
@@ -4512,6 +4535,85 @@
   },
   {
     "name": "main.md",
+    "path": "/picotron_api/functions/set_spr/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "set_spr(index, s, [flags_val])",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "`set_spr` adds or removes a sprite at a set index.",
+              "",
+              "Sprite flags are stored at 0xc000 (16k)",
+              "",
+              "Source: [source.lua](source.lua)",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Arguments",
+            "content": [
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "index",
+                "content": [
+                  "",
+                  "The index of the sprite you're modifying in the spritesheet.",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "s",
+                "content": [
+                  "",
+                  "The sprite data to set in sprite `index`, form of a `userdata u8`.",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "[flags_val]",
+                "content": [
+                  "",
+                  "The flag information to be set for sprite `index`, defaults to 0",
+                  "",
+                  "Poked into `0xc000`, offset by `index &= 0x3fff`",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "Returns",
+            "content": [
+              "",
+              "This function does not return anything"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main.md",
     "path": "/picotron_api/functions/rm/main.md",
     "data": [
       {
@@ -4560,67 +4662,6 @@
             "content": [
               "",
               "Returns something, unknown what it returns"
-            ],
-            "children": []
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "main.md",
-    "path": "/picotron_api/functions/pid/main.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "pid()",
-        "content": [
-          ""
-        ],
-        "children": [
-          {
-            "level": 2,
-            "text": "Overview",
-            "content": [
-              "",
-              "`pid` returns the process id of the process calling it.",
-              "",
-              "This is useful for communication between processes",
-              "",
-              "Source: [source.lua](source.lua)",
-              ""
-            ],
-            "children": []
-          },
-          {
-            "level": 2,
-            "text": "Usage Example",
-            "content": [
-              "",
-              "Using the filenav with the intention to save a file.",
-              "",
-              "```lua",
-              "create_process(\"/system/apps/filenav.p64\", {",
-              "    open_with = pid(), --shows the id of the process that opened it",
-              "    intention = \"save_file_as\",",
-              "    path=\"/desktop/\",",
-              "    use_ext=\"spr\",",
-              "    window_attribs = {",
-              "        workspace=\"current\",",
-              "        autoclose=true",
-              "    }",
-              "})",
-              "```",
-              ""
-            ],
-            "children": []
-          },
-          {
-            "level": 2,
-            "text": "Returns",
-            "content": [
-              "",
-              "The process ID"
             ],
             "children": []
           }
@@ -4801,6 +4842,67 @@
   },
   {
     "name": "main.md",
+    "path": "/picotron_api/functions/pid/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "pid()",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "`pid` returns the process id of the process calling it.",
+              "",
+              "This is useful for communication between processes",
+              "",
+              "Source: [source.lua](source.lua)",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Usage Example",
+            "content": [
+              "",
+              "Using the filenav with the intention to save a file.",
+              "",
+              "```lua",
+              "create_process(\"/system/apps/filenav.p64\", {",
+              "    open_with = pid(), --shows the id of the process that opened it",
+              "    intention = \"save_file_as\",",
+              "    path=\"/desktop/\",",
+              "    use_ext=\"spr\",",
+              "    window_attribs = {",
+              "        workspace=\"current\",",
+              "        autoclose=true",
+              "    }",
+              "})",
+              "```",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Returns",
+            "content": [
+              "",
+              "The process ID"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main.md",
     "path": "/picotron_api/functions/mv/main.md",
     "data": [
       {
@@ -4860,6 +4962,74 @@
               "If using a protocol (e.g: `bbs://`) > \"can not write to {protocol you attempted}://\"",
               "",
               "More returns are for other failures, unknown.",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Future",
+            "content": [
+              "",
+              "Ability to write to protocols"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main.md",
+    "path": "/picotron_api/functions/mkdir/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "mkdir(p)",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "`mkdir` creates a new directory (empty folder) at the path `p`",
+              "",
+              "This does not support protocols (e.g: bbs://)",
+              "",
+              "Source: [source.lua](source.lua)",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Arguments",
+            "content": [
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "p",
+                "content": [
+                  "",
+                  "The path for the new directory",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "Returns",
+            "content": [
+              "",
+              "This function returns an error in the form of a string if the function fails.",
+              "Otherwise, returns nil",
               ""
             ],
             "children": []
@@ -4987,74 +5157,6 @@
               "    send_message(3,{event=\"mouse\",mx=x,my=y,mb=b or 0})",
               "end",
               "```"
-            ],
-            "children": []
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "main.md",
-    "path": "/picotron_api/functions/mkdir/main.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "mkdir(p)",
-        "content": [
-          ""
-        ],
-        "children": [
-          {
-            "level": 2,
-            "text": "Overview",
-            "content": [
-              "",
-              "`mkdir` creates a new directory (empty folder) at the path `p`",
-              "",
-              "This does not support protocols (e.g: bbs://)",
-              "",
-              "Source: [source.lua](source.lua)",
-              ""
-            ],
-            "children": []
-          },
-          {
-            "level": 2,
-            "text": "Arguments",
-            "content": [
-              ""
-            ],
-            "children": [
-              {
-                "level": 3,
-                "text": "p",
-                "content": [
-                  "",
-                  "The path for the new directory",
-                  ""
-                ],
-                "children": []
-              }
-            ]
-          },
-          {
-            "level": 2,
-            "text": "Returns",
-            "content": [
-              "",
-              "This function returns an error in the form of a string if the function fails.",
-              "Otherwise, returns nil",
-              ""
-            ],
-            "children": []
-          },
-          {
-            "level": 2,
-            "text": "Future",
-            "content": [
-              "",
-              "Ability to write to protocols"
             ],
             "children": []
           }
@@ -5569,6 +5671,61 @@
   },
   {
     "name": "main.md",
+    "path": "/picotron_api/functions/get_spr/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "get_spr(index)",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "`get_spr` returns the sprite information of the sprite at `index`.",
+              "",
+              "Source: [source.lua](source.lua)",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Arguments",
+            "content": [
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "index",
+                "content": [
+                  "",
+                  "The sprite index of which you want the information",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "Returns",
+            "content": [
+              "",
+              "This returns the `userdata u8` graphical data of the sprite at sprite `index`."
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main.md",
     "path": "/picotron_api/functions/create_process/main.md",
     "data": [
       {
@@ -5676,61 +5833,6 @@
               "If the process created is a process that they cannot create > nil, \"sandboxed process can not create_process()\"",
               "",
               "If the process creates more than 20 processes in a single minute > return nil, \"sandboxed process can not create_process() more than 20 / minute\""
-            ],
-            "children": []
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "main.md",
-    "path": "/picotron_api/functions/get_spr/main.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "get_spr(index)",
-        "content": [
-          ""
-        ],
-        "children": [
-          {
-            "level": 2,
-            "text": "Overview",
-            "content": [
-              "",
-              "`get_spr` returns the sprite information of the sprite at `index`.",
-              "",
-              "Source: [source.lua](source.lua)",
-              ""
-            ],
-            "children": []
-          },
-          {
-            "level": 2,
-            "text": "Arguments",
-            "content": [
-              ""
-            ],
-            "children": [
-              {
-                "level": 3,
-                "text": "index",
-                "content": [
-                  "",
-                  "The sprite index of which you want the information",
-                  ""
-                ],
-                "children": []
-              }
-            ]
-          },
-          {
-            "level": 2,
-            "text": "Returns",
-            "content": [
-              "",
-              "This returns the `userdata u8` graphical data of the sprite at sprite `index`."
             ],
             "children": []
           }
@@ -5877,6 +5979,124 @@
             "children": []
           }
         ]
+      }
+    ]
+  },
+  {
+    "name": "main.md",
+    "path": "/picotron_api/functions/camera/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "camera(x,y)",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "camera() allows for you to set the relative 0,0 of all graphical operations.",
+              "",
+              "Source: [source.lua](source.lua)",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Arguments",
+            "content": [
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "x",
+                "content": [
+                  "",
+                  "x coordinate to set",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "y",
+                "content": [
+                  "",
+                  "y coordinate to set",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "Examples",
+            "content": [
+              "",
+              "Sets a player object to be in the middle of the screen",
+              "```lua",
+              "",
+              "--player object",
+              "player={",
+              "    x=0,",
+              "    y=0",
+              "}",
+              "",
+              "--set the player to be in the middle of the screen",
+              "",
+              "screen={",
+              "    width=480,",
+              "    height=270",
+              "}",
+              "",
+              "function _update()",
+              "    camera={",
+              "        x=player.x-(screen.width/2),",
+              "        y=player.y-(screen.height/2),",
+              "    }",
+              "",
+              "    camera(x,y)",
+              "end",
+              "```",
+              "",
+              "This can be paired with `mid()` to clamp it to the viewable area, e.g: the map.",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Returns",
+            "content": [
+              "",
+              "Returns the previous camera's x,y positions."
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "readme.md",
+    "path": "/information/readme.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "Picotron Information",
+        "content": [
+          "",
+          "[Roadmap](roadmap.md)",
+          "",
+          "[What Is Picotron](whatis.md)"
+        ],
+        "children": []
       }
     ]
   },
@@ -6092,124 +6312,6 @@
             "children": []
           }
         ]
-      }
-    ]
-  },
-  {
-    "name": "main.md",
-    "path": "/picotron_api/functions/camera/main.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "camera(x,y)",
-        "content": [
-          ""
-        ],
-        "children": [
-          {
-            "level": 2,
-            "text": "Overview",
-            "content": [
-              "",
-              "camera() allows for you to set the relative 0,0 of all graphical operations.",
-              "",
-              "Source: [source.lua](source.lua)",
-              ""
-            ],
-            "children": []
-          },
-          {
-            "level": 2,
-            "text": "Arguments",
-            "content": [
-              ""
-            ],
-            "children": [
-              {
-                "level": 3,
-                "text": "x",
-                "content": [
-                  "",
-                  "x coordinate to set",
-                  ""
-                ],
-                "children": []
-              },
-              {
-                "level": 3,
-                "text": "y",
-                "content": [
-                  "",
-                  "y coordinate to set",
-                  ""
-                ],
-                "children": []
-              }
-            ]
-          },
-          {
-            "level": 2,
-            "text": "Examples",
-            "content": [
-              "",
-              "Sets a player object to be in the middle of the screen",
-              "```lua",
-              "",
-              "--player object",
-              "player={",
-              "    x=0,",
-              "    y=0",
-              "}",
-              "",
-              "--set the player to be in the middle of the screen",
-              "",
-              "screen={",
-              "    width=480,",
-              "    height=270",
-              "}",
-              "",
-              "function _update()",
-              "    camera={",
-              "        x=player.x-(screen.width/2),",
-              "        y=player.y-(screen.height/2),",
-              "    }",
-              "",
-              "    camera(x,y)",
-              "end",
-              "```",
-              "",
-              "This can be paired with `mid()` to clamp it to the viewable area, e.g: the map.",
-              ""
-            ],
-            "children": []
-          },
-          {
-            "level": 2,
-            "text": "Returns",
-            "content": [
-              "",
-              "Returns the previous camera's x,y positions."
-            ],
-            "children": []
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "readme.md",
-    "path": "/information/readme.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "Picotron Information",
-        "content": [
-          "",
-          "[Roadmap](roadmap.md)",
-          "",
-          "[What Is Picotron](whatis.md)"
-        ],
-        "children": []
       }
     ]
   },
