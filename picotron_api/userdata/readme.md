@@ -3,7 +3,7 @@
 ## Overview
 A userdata is a specialized array type that contains numeric values, and is optimized for bulk operations. Because of this, they are an essential tool for optimizing code in Picotron.
 
-Userdatas are especially useful for representing large amounts of numerical data in a manner that's easy to manipulate and copy. They also are also a pragmatic way to do operations based in linear algebra, and have a dedicated set of vector/matrix-specific methods, such as [`magnitude()`](methods/magnitude/main.md), [`cross()`](methods/cross/main.md) and [`matmul()`](methods/magnitude/main.md).
+Userdatas are especially useful for representing large amounts of numerical data in a manner that's easy to manipulate and copy. They are also a pragmatic way to do operations based in linear algebra, and have a dedicated set of vector/matrix-specific methods, such as [`magnitude()`](methods/magnitude/main.md), [`cross()`](methods/cross/main.md) and [`matmul()`](methods/magnitude/main.md).
 
 ## Creation
 Userdatas are not resizable once created. However, most of the time the actual expense of allocating a userdata is several times cheaper than the overhead of calling the Lua function that would do so. There are several ways to make a new userdata.
@@ -44,9 +44,9 @@ local ud = vec(0, 1, 2, 3, 4)
 
 -- Userdatas are 0-indexed. The final index that should be iterated
 -- is not the same as the total count of elements, meaning you will
--- have to subtract one from the the count. If you forget to do
--- this, the iterator will index the userdata out of range,
--- fetching a nil value.
+-- have to subtract one from the count. If you forget to do this,
+-- the iterator will index the userdata out of range, fetching a
+-- nil value.
 -- It's also worth noting you will need this mindset for ud:width()
 -- and ud:height() as well, since they also give you counts, not
 -- final indices.
