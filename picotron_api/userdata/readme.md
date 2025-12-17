@@ -139,7 +139,7 @@ local result = lhs:div(rhs, dest)
 
 The next six arguments dictate how the userdatas will be iterated over.
 
-`read_start` and `write_start` control where iteration will start for `lhs` and `rhs`, respectively. These both default to 0, which is why without these arguments, both inputs and the output operate on the same indices for each operation. Setting `read_start` to some other positive value will cause the indices being read from `rhs` to be offset by as much, and similarly for `write_start`, the indices being read from `lhs` and written to in the destination userdata will be offset.
+`read_start` and `write_start` control where iteration will start for `rhs` and `lhs`, respectively. These both default to 0, which is why without these arguments, both inputs and the output operate on the same indices for each operation. Setting `read_start` to some other positive value will cause the indices being read from `rhs` to be offset by as much, and similarly for `write_start`, the indices being read from `lhs` and written to in the destination userdata will be offset.
 
 The fact that the index that is being read from `lhs` is also the one being written to in the destination userdata is worth underlining. Even with additional arguments, this correlation never changes.
 
