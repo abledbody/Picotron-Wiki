@@ -1,4 +1,4 @@
-# sspr(sprite,[x],[y],[flip_x],[flip_y])
+# sspr(sprite,sx,sy,sw,sh,x,y,[dw],[dh][flip_x],[flip_y])
 
 ## Overview
 
@@ -10,29 +10,29 @@ Source: [source.lua](source.lua)
 
 ## Arguments
 
-### sprite
+### sprite: `index` or `userdata u8`
 
-Sprite index from the spritesheet, or a `userdata u8` piece of data - this is what is drawn.
+What is drawn to the screen
 
-### x,y
+### sx,sy: `number`
 
 The coordinates of what is treated as the top left of `sprite`, allowing you to add offsets
 
-### sw,sh
+### sw,sh: `number`
 
 The width & height of `sprite` - allows you to crop the sprite.
 
-### dx,dy
+### dx,dy: `number`
 
-Where you want the sprite to be drawn on the screen
+Where the sprite is to be drawn on screen
 
-### [dw],[dh]
+### [dw],[dh]: `number`
 
 Optional, defaults to the proportions of the sprite
 
 The new width & height of `sprite`.
 
-`sprite` will be drawn rescaled to match the proportions of `[dx],[dy]`.
+`sprite` will be drawn rescaled to match the proportions of `[dw],[dh]`.
 
 ### [flip_x],[flip_y]
 
