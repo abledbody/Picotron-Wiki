@@ -59,7 +59,7 @@ for i = 0, #ud - 1 do
 end
 ```
 
-With this in mind, this snippet is meant to demonstrate where each index ends up this userdata.
+With this in mind, the following snippet is meant to demonstrate where each flat index ends up in a 2D userdata's coordinates.
 ```lua
 -- ud is created with a layout like so:
 -- 00 01 02
@@ -67,6 +67,7 @@ With this in mind, this snippet is meant to demonstrate where each index ends up
 -- 06 07 08
 local ud = userdata("u8", 3, 3, "000102030405060708")
 
+-- ud:get(x, y) uses column/row coordinates rather than a flat index.
 -- First row
 assert(ud[0] == ud:get(0, 0))
 assert(ud[1] == ud:get(1, 0))
@@ -89,7 +90,7 @@ Userdatas can have one or two dimensions. The [`userdata()`](/picotron_api/funct
 1D userdatas do not have a height. That doesn't mean that their height value is 1 or 0, but that height is not an attribute that they keep track of. Having or not having a height is a property that is stored on the userdata. This will cause certain functions, such as [`get()`](methods/get/main.md) and [`set()`](methods/set/main.md), to behave differently, under the assumption that the effective height of a 1D userdata is always 1.
 
 ## Bulk operations
-Userdatas have several bulk number manipulation methods that all work in roughly the same way. These operations are the main reason why userdatas are an attractive tool for optimization, because they skip the overhead of using a for loop in lua, where each operation costs an order of magnitude more than it would running in native code, where bulk operations do most of their work.
+Userdatas have several bulk number manipulation methods that all work in roughly the same way. These operations are the main reason why userdatas are an attractive tool for optimization, because they skip the overhead of using a for loop in Lua, where each operation costs an order of magnitude more than it would running in native code, where bulk operations do most of their work.
 
 One-op:
 - [`abs`](methods/abs/main.md)
