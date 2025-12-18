@@ -17,7 +17,7 @@ function pushResults(results,query){
         h2.innerHTML=`No results :c<br>Want to <a href="https://github.com/Astralsparv/Picotron-Wiki/blob/main/documenting.md">document it</a>?`;
         container.appendChild(h2);
     }
-    for (i=results.length-1; i>0; i--){
+    for (i=results.length-1; i>=0; i--){
         var result=document.createElement('div');
         result.classList='result';
         
