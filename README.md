@@ -23,6 +23,18 @@ System documentation can be found [here](system/readme.md)
 
 Documenting every section of `/system`
 
+## Picotron API
+
+Documentation on the Picotron API can be found [here](picotron_api/readme.md)
+
+## Environment
+
+Documentation on the ecosystem/environment of Picotron can be found [here](environment/readme.md)
+
+## Guides
+
+Guides for Picotron can be found [here](guides/readme.md)
+
 ## Contributors
 
 @Podepi - GUIs
@@ -33,12 +45,6 @@ Documenting every section of `/system`
 
 [@Maxine](https://github.com/MaxTheMooshroom) - stat documentation support
 
+@bloodninja - 720p upscaler documentation
+
 @Astralsparv - creator/writing up of lots of general things
-
-## Picotron API
-
-Documentation on the Picotron API can be found [here](picotron_api/readme.md)
-
-## Guides
-
-Guides for Picotron can be found [here](guides/readme.md)
