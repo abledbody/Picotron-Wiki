@@ -28,3 +28,5 @@ print("720p scaler",62,36,8)
 ```
 
 [Example Cart](https://www.lexaloffle.com/bbs/?tid=153523) by @bloodninja for an example!
+
+![Display of the cart in runtime](https://www.lexaloffle.com/bbs/thumbs/pico64_dagupigewe-0.png)
