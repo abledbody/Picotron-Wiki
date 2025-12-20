@@ -2,6 +2,8 @@
 
 ## Overview
 
-Documentation on all of `/system/`
+Documentation on things related to `/system/`
 
-[`/system/util`](util/)
+[System Persistence)](persistence/main.md)
+
+[Details of /system (the per file nitty gritty information)](details/readme.md)
