@@ -18,56 +18,71 @@ Table of desired attributes of the window
 
 Cannot overwrite `parent_pid`
 
-#### width
+#### `width`: number
 
 width in pixels (not including the frame)
 
-#### height
+#### `height`: height
 
 height in pixels
 
-#### title
+#### `title`: string
 
 set a title displayed on the window's titlebar
 
-#### pauseable
+#### `pauseable`: boolean
 
 false to turn off the app menu that normally comes up with ENTER/START button
 
-#### tabbed
+#### `tabbed`: boolean
 
 true to open in a tabbed workspace (like the code editor)
 
-#### has_frame
+#### `has_frame`: boolean
 
 Default: true
 
 Whether to have a frame around the window
 
-#### moveable
+#### `moveable`: boolean
 
 Default: true
 
 Whether to allow the window to be dragged
 
-#### resizeable
+#### `resizeable`: boolean
 
 Default: true
+
 Whether to allow the window to be resized
 
-#### wallpaper
+#### `wallpaper`: boolean
 
-acts as a wallpaper (z Defaults to -1000 in that case)
+Default: true
 
-#### autoclose
+acts as a wallpaper:
+* z defaults to -1000 in that case
+* opens a filenav (for the desktop interface)
+
+#### `autoclose`: boolean
 
 close window when is no longer in focus or when press escape
 
-#### z    
+#### `x`: number
 
-windows with higher z are drawn on top. Defaults to 0
+Position of the window
 
-#### cursor
+#### `y`: number
+
+Position of the window
+
+#### `z`: number
+
+Default: 0
+
+windows with higher z are drawn on top.
+
+#### `cursor`: string|number
 
 0 for no cursor
 
@@ -75,18 +90,24 @@ windows with higher z are drawn on top. Defaults to 0
 
 userdata for a custom cursor
 
-#### squashable
+Use strings for some built in cursors, e.g: `pointer`
+
+#### `squashable`: boolean
 
 window resizes itself to stay within the desktop region
 
-#### background_updates
+#### `background_updates`: boolean
 
 allow _update() callbacks when parent window is not visible
 
-#### background_draws
+#### `background_draws`: boolean
 
 allow _draw() callbacks when parent window is not visible
 
-### show_context_menu
+### `show_context_menu`: boolean
 
-displays the menu at the player's cursor
+displays the menu at the user's cursor
+
+### `ghost`: boolean
+
+Window is drawn, uninteractable, inputs passthrough to the below window
