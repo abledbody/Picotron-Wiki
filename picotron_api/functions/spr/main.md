@@ -2,7 +2,7 @@
 
 ## Overview
 
-`sspr` draws a sprite, similar to [`spr()`](/functions/spr/main.md), but allows you to also resize the sprite.
+`spr` draws a sprite from either a userdata or the spritebank
 
 This is scaling sprites, e.g: zoom
 
