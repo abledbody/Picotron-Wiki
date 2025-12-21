@@ -117,7 +117,7 @@ Two-op:
 
 The signature for these methods is `ud = lhs:op([rhs], [dest], [read_start], [write_start], [group_size], [read_increment], [write_increment], [group_count])`, but to build robust knowledge, this section will start with the most basic usage and gradually add additional features from each of the arguments.
 
-For the one-op methods, the `rhs` argument is completely ignored. Without any arguments this will just apply the operation to every element in the userdata. `ud = lhs:abs()` will create a userdata `ud` which is identical to `lhs`, except every value will be absolute instead of signed.
+For the one-op methods, the `rhs` argument is completely ignored, unless `lhs` is not a userdata. Without any arguments this will just apply the operation to every element in the userdata. `ud = lhs:abs()` will create a userdata `ud` which is identical to `lhs`, except every value will be absolute instead of signed.
 
 For the two-op methods, `rhs` is required, and will be applied just like the respective instruction the operation is named after. `ud = lhs:div(rhs)` will produce a userdata `ud` which is identical to `lhs`, except each element will be divided by the element in `rhs` which shares the same index. `ud = vec(1, 2):div(vec(2, 3))` will produce a userdata with the elements in index 0 and 1 being 1/2 and 2/3, respectively.
 
@@ -141,6 +141,15 @@ local result = lhs:div(rhs, true)
 -- The result variable will point to the same userdata as dest.
 local result = lhs:div(rhs, dest)
 ```
+
+Below is a reference table for the behavior of `dest`.
+|`dest`             |`lhs`       |`rhs`   |written to     |
+|-------------------|------------|--------|---------------|
+|userdata           |any         |any     |`dest`         |
+|truthy non-userdata|userdata    |any     |`lhs`          |
+|truthy non-userdata|non-userdata|userdata|`rhs`          |
+|falsey             |userdata    |any     |a copy of `lhs`|
+|falsey             |non-userdata|userdata|a copy of `rhs`|
 
 The next six arguments dictate how the userdatas will be iterated over.
 
