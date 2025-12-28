@@ -33,6 +33,14 @@ a bitfield:
 * 0x1 left mouse button
 * 0x2 right mouse button
 * 0x4 middle mouse button
+ 
+### wheel_x
+
+The amount scrolled on the scrollwheel in the x-axis
+
+### wheel_y
+
+The amount scrolled on the scrollwheel in the y-axis
 
 ## Limitations
 
