@@ -44,6 +44,7 @@ The amount scrolled on the scrollwheel in the y-axis
 
 ## Examples
 
+Get the properties of the mouse & print when you left click or right click.
 ```lua
 function _update()
  mouse_x, mouse_y, mouse_b, wheel_x, wheel_y = mouse()
