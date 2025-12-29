@@ -42,6 +42,20 @@ The amount scrolled on the scrollwheel in the x-axis
 
 The amount scrolled on the scrollwheel in the y-axis
 
+## Examples
+
+```lua
+function _update()
+ mouse_x, mouse_y, mouse_b, wheel_x, wheel_y = mouse()
+ if (mouse_b==0x1) then
+  print("left click!")
+ end
+ if (mouse_b==0x2) then
+  print("right click!")
+ end
+end
+```
+
 ## Limitations
 
 The mouse() function does not allow you to set full properties of the mouse.
