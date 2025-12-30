@@ -32,7 +32,7 @@ Position of mouse y axis relative to this element
 
 ## Event Callbacks
 
-[update](draw/main.md)
+[update](update/main.md)
 
 [draw](draw/main.md)
 
@@ -40,14 +40,14 @@ Position of mouse y axis relative to this element
 
 [doubleclick](doubleclick/main.md)
 
-[tap](draw/main.md)
+[tap](tap/main.md)
 
 [doubletap](doubletap/main.md)
 
-[release](draw/main.md)
+[release](release/main.md)
 
-[mousewheel](draw/main.md)
+[mousewheel](mousewheel/main.md)
 
 [drag](drag/main.md)
 
-[hover](draw/main.md)
+[hover](hover/main.md)
