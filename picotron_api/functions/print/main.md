@@ -34,7 +34,7 @@ end
 
 ## Returns
 
-Returns the width & height of the text that is printed.
+Returns the ending x & y coordinate of the text that is printed.
 ```lua
-width,height=print("hi")
+fx,fy=print("hi")
 ```
